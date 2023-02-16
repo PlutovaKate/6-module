@@ -15,19 +15,19 @@ const images = [
 
 const ulEl = document.querySelector('.gallery')
 // 1й вариант
-// images.map((image)=>{
-//   const liEl = document.createElement('li')
-//   liEl.style.listStyle = 'none'
-//   ulEl.append(liEl)
+images.map((image)=>{
+  const liEl = document.createElement('li')
+  liEl.style.listStyle = 'none'
+  ulEl.append(liEl)
   
-//   const imgEl = document.createElement('img')
-//   imgEl.src = image.url
-//   imgEl.alt = image.alt
-//   imgEl.style.width = '300px'
+  const imgEl = document.createElement('img')
+  imgEl.src = image.url
+  imgEl.alt = image.alt
+  imgEl.style.width = '300px'
   
-//   liEl.append(imgEl)
+  liEl.append(imgEl)
 
-// })
+})
 
 //2 вариант - так лучше не делать, так как єтот вариант может стирать всё
 // ulEl.innerHTML += `<li>
